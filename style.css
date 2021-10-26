@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+html {
+    font-size: 10px;
+    height: 100%;
+    font-family: 'VT323', monospace;
+}
+body {
+    background-color: black;
+    min-height: 100%;
+}
+h1 {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+#calculator {
+    background-color: rgb(80, 79, 79);
+    width: 50rem;
+    height: 60rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    border: 1px solid rgb(241, 241, 241);
+}
+#calc-screen {
+    background-color: white;
+    color: black;
+    font-size: 6rem;
+    width: 80%;
+    height: 25%;
+    margin: auto;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.display {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    padding: 4rem;
+    font-family: 'VT323', monospace;
+}
+
+#calc-buttons {
+    background-color: white;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "one two three four"
+    "five six seven eight"
+    "nine ten eleven twelve"
+    "thirteen fourteen fifteen sixteen"
+    "seventeen eighteen nineteen twenty";
+}
+button {
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+    font-family: 'VT323', monospace;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline;
+    margin: auto;
+}
+button:hover {
+    transform: scale(1.1);
+}
+button:active {
+    transform: scale(.8);
+}
+#clear {
+    grid-area: one;
+}
+#backspace {
+    grid-area: three;
+    width: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+#backspace:hover {
+    transform: scale(1.1);
+}
+#backspace:active {
+    transform: scale(.8);
+}
+#divide {
+    grid-area: four;
+}
+#n7 {
+    grid-area: five;
+}
+#n8 {
+    grid-area: six;
+}
+#n9 {
+    grid-area: seven;
+}
+#multiply {
+    grid-area: eight;
+}
+#n4 {
+    grid-area: nine;
+}
+#n5 {
+    grid-area: ten;
+}
+#n6 {
+    grid-area: eleven;
+}
+#subtract {
+    grid-area: twelve;
+}
+#n1 {
+    grid-area: thirteen;
+}
+#n2 {
+    grid-area: fourteen;
+}
+#n3 {
+    grid-area: fifteen;
+}
+#add {
+    grid-area: sixteen;
+}
+#n0 {
+    grid-area: eighteen;
+}
+#decimal {
+    grid-area: nineteen;
+}
+#equals {
+    grid-area: twenty;
+}
+footer {
+    color: white;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+}
